@@ -1,0 +1,18 @@
+<h1>Counted Page</h1>
+
+
+<br>
+Your Text = {{ dic }}
+<br>
+<br>
+total word = {{lenword}}
+<br>
+<br>
+<h2>Counted Words</h2>
+{% for i,j in count %}
+{{ i }}={{ j }}
+<br/>
+{% endfor %}
+<br>
+<br>
+<a href="{% url 'home' %}">Back to Homepage </a>
